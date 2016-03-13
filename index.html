@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html land="en">
-    <head>
-       <title>VTO</title>
-      <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-      <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VTO</title>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-       <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     </head>
-    <body>
-      <h1>Make a selfie video</h1>
-      <p><img src="images/head.gif"></p>
-      <h2>Record yourself slowly turning your head</h2>
-      <p>Turn your head all the way left and then right and back to center.</p>
-      <p>You should be filming for about 10 seconds.</p>
-      <p>Don't forget to start and stop the camera!</p>
-      <h3>Load Camera</h3>
-      <form id="form1" runat="server" action="http://johnsmith.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
-        <input type='file' accept="video/*" id="imgInp"/>
-        <video id="face" src="#" alt="your image" ></video>
-      </form>
 
+    <body>
+      <div class="row">
+        <div class="container col-md-4 col-md-offset-4">
+          <div class="make_selfie">
+            <div class="intro">
+              <h1>Make a selfie video</h1>
+              <p><img src="images/head.gif"></p>
+            </div>
+            <div class="instructions">
+              <h2>Record yourself slowly turning your head</h2>
+              <p>Turn your head all the way left and then right and back to center.</p>
+              <p>You should be filming for about 10 seconds.</p>
+              <p>Don't forget to start and stop the camera!</p>
+            </div>
+            <form id="form1" runat="server" action="http://johnsmith.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+              <input type='file' accept="video/*" id="imgInp"/>
+              <video id="face" src="#" alt="your image" ></video>
+            </form>
+          </div>
+        </div>
+      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
       <script src="js/app.js"></script>
     </body>
 </html>
-
-http://video-luxottica.s3.amazonaws.com/
