@@ -1,0 +1,51 @@
+
+
+body {
+
+
+}
+
+video {
+	width: 150px;
+	height: 150px;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+#form1 {
+	/*display: block;
+	margin: 0 auto;*/
+	text-align: center;
+	margin: 0;
+}
+
+input {
+	display: block;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 25px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.note {
+	font-size: 8px;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
